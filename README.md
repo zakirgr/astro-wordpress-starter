@@ -1,4 +1,4 @@
-# Astro WordPress Starter
+# Baby Safe Travel
 
 This project is meant to be a flexible starting point for people interested in using [Astro](https://astro.build/) with WordPress as a headless CMS. If you want some additional resources to help get you started, check out the blog post and video linked below.
 
@@ -27,12 +27,12 @@ This project comes with built in support for Post, Page, Tag, and Category types
 
 #### Overriding Default Routing
 
-Since routes using [rest parameters in Astro](https://docs.astro.build/en/core-concepts/routing/#rest-parameters) come last in the [route priority order](https://docs.astro.build/en/core-concepts/routing/#route-priority-order), you can easily override this catch-all routing pattern by creating a more specific route to handle a given path. 
+Since routes using [rest parameters in Astro](https://docs.astro.build/en/core-concepts/routing/#rest-parameters) come last in the [route priority order](https://docs.astro.build/en/core-concepts/routing/#route-priority-order), you can easily override this catch-all routing pattern by creating a more specific route to handle a given path.
 
 For example, if you want the path `/category/food-trucks` to be handled by a different Astro component, you can add a corresponding file to the `pages` directory to override the default `...uri` route.
 
 
-### Menus 
+### Menus
 
 By default, the menu assigned to the `Primary` menu location will be used for your header menu.
 
@@ -47,5 +47,3 @@ All of the current routes are being pre-rendered to HTML and served using the [s
 ## Headless WordPress Hosting with Atlas
 
 WP Engine's Atlas platform provides a performant and user-friendly hosting platform for headless WordPress and Node-based JavaScript apps. [Create a free sandbox account](https://wpengine.com/atlas/) to try the platform, and check out our Astro deployment guide for instruction to deploy to the platform.
-
-
