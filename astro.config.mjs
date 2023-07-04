@@ -1,9 +1,14 @@
 import { defineConfig } from 'astro/config';
-import node from '@astrojs/node';
-import netlify from "@astrojs/netlify/edge-functions'";
+
+// https://astro.build/config
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
+    output: 'static'
+});
   output: 'server',
-  adapter: netlify()
+  adapter: node({
+    mode: 'standalone'
+  })
 });
